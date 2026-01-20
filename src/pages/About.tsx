@@ -107,7 +107,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <GlassCard className="overflow-hidden p-0">
               <div className="h-48 bg-cover bg-center" style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1543429258-c5b659bb0492?w=800)'
+                backgroundImage: 'url(https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=800)'
               }} />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Florence, Italy</h3>
