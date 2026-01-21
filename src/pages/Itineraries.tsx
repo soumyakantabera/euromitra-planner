@@ -5,7 +5,7 @@ import { Layout } from '@/components/layout/Layout';
 import { ItineraryCard } from '@/components/ui/ItineraryCard';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
-import { allItineraries, regions, styles, durations } from '@/data/itineraries';
+import { itineraries, regions, styles, durations } from '@/data/itineraries';
 import { cn } from '@/lib/utils';
 
 export default function Itineraries() {
@@ -18,7 +18,7 @@ export default function Itineraries() {
   const [showFilters, setShowFilters] = useState(false);
 
   const filteredItineraries = useMemo(() => {
-    return allItineraries.filter((it) => {
+    return itineraries.filter((it) => {
       if (selectedRegion && it.region !== selectedRegion) return false;
       if (selectedStyles.length > 0 && !selectedStyles.some((s) => it.style.includes(s))) return false;
       if (selectedDuration) {
