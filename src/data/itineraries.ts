@@ -51,7 +51,7 @@ export const itineraries: Itinerary[] = [
     },
     walkingScore: 95,
     bestSeason: 'Apr-Jun, Sep-Oct',
-    heroImage: 'https://images.unsplash.com/photo-1543429258-c5b659bb0492?w=1200',
+    heroImage: 'https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=1200',
     description: 'Wander Renaissance streets in the morning, escape to Tuscan hills by afternoon. Perfect blend of art, food, and nature.',
     highlights: ['Duomo sunrise views', 'Boboli Gardens', 'Fiesole hill town', 'Oltrarno artisan quarter'],
     dayByDay: [
