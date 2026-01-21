@@ -598,6 +598,12 @@ export const itineraries: Itinerary[] = [
   },
 ];
 
+// Import and merge new itineraries
+import { newItineraries } from './newItineraries';
+
+// Combine all itineraries
+export const allItineraries: Itinerary[] = [...itineraries, ...newItineraries];
+
 export const regions = [
   { id: 'europe', label: 'Europe' },
   { id: 'india', label: 'India' },
@@ -612,6 +618,7 @@ export const styles = [
   { id: 'photography', label: 'Photography' },
   { id: 'mixed', label: 'Mixed' },
   { id: 'student-friendly', label: 'Student-friendly' },
+  { id: 'relax', label: 'Relax' },
 ];
 
 export const durations = [
