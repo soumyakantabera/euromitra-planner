@@ -51,7 +51,7 @@ export function HowItWorks() {
 
         <div className="relative max-w-5xl mx-auto">
           {/* Connection Line - Desktop */}
-          <div className="hidden md:block absolute top-32 left-[15%] right-[15%] h-1 bg-gradient-to-r from-[#17A2A6] via-[#D6A84A] to-[#0B1F3B] rounded-full" />
+          <div className="hidden md:block absolute top-[60px] left-[20%] right-[20%] h-1 bg-gradient-to-r from-[#17A2A6] via-[#D6A84A] to-[#0B1F3B] rounded-full" />
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             {steps.map((step, index) => (
