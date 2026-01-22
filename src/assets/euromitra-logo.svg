@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .navy{fill:#0B1F3B}
+      .route{fill:none;stroke:#17A2A6;stroke-width:10;stroke-linecap:round;stroke-linejoin:round}
+      .accent{fill:#D6A84A}
+    </style>
+  </defs>
+  
+  <!-- "Mitra" buddies -->
+  <circle cx="58" cy="54" r="10" class="navy"/>
+  <circle cx="102" cy="54" r="10" class="navy"/>
+  <!-- Smile / bridge -->
+  <path class="route" d="M46 78 C64 98, 96 98, 114 78" opacity="0.95"/>
+  <!-- Route shaped like an M -->
+  <path class="route" d="M38 124 L60 92 L80 124 L100 92 L122 124"/>
+  <!-- Start point -->
+  <circle cx="38" cy="124" r="6" class="accent"/>
+  <!-- Destination pin -->
+  <g transform="translate(92,88)">
+    <path d="M36 18c0-10-8-18-18-18S0 8 0 18c0 15 18 38 18 38s18-23 18-38z" class="navy"/>
+    <circle cx="18" cy="18" r="6.5" class="accent"/>
+  </g>
+</svg>
