@@ -70,15 +70,12 @@ export function PlanWithUs() {
           {packages.map((pkg) => (
             <div
               key={pkg.name}
-              className={`relative rounded-3xl overflow-hidden ${pkg.popular ? 'md:scale-105 md:-my-4 z-10' : ''}`}
+              className={`group relative rounded-3xl overflow-hidden transition-transform duration-300 hover:scale-[1.02] ${pkg.popular ? 'md:scale-105 md:-my-4 z-10' : ''}`}
             >
               {/* Gradient background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${pkg.gradient} opacity-90`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${pkg.gradient}`} />
               
-              <GlassCard
-                className="relative bg-transparent border-white/20 flex flex-col h-full"
-                hover
-              >
+              <div className="relative p-6 flex flex-col h-full min-h-[480px]">
                 {pkg.popular && (
                   <div className="absolute -top-0 left-1/2 -translate-x-1/2">
                     <span className="bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1.5 rounded-b-xl shadow-lg">
@@ -87,7 +84,7 @@ export function PlanWithUs() {
                   </div>
                 )}
 
-                <div className={`w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 ${pkg.popular ? 'mt-4' : ''}`}>
+                <div className={`w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors ${pkg.popular ? 'mt-4' : ''}`}>
                   <pkg.icon className="w-7 h-7 text-white" />
                 </div>
 
@@ -95,15 +92,15 @@ export function PlanWithUs() {
                 <p className="text-4xl font-bold text-white mb-3">{pkg.price}</p>
                 <p className="text-sm text-white/80 mb-4">{pkg.description}</p>
 
-                <div className="bg-white/10 rounded-xl px-4 py-3 mb-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 mb-6">
                   <span className="text-white/60 text-xs">Best for:</span>
                   <p className="font-semibold text-white text-sm">{pkg.bestFor}</p>
                 </div>
 
                 <ul className="space-y-3 mb-8 flex-1">
                   {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-sm text-white/90">
-                      <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <li key={feature} className="flex items-center gap-3 text-sm text-white">
+                      <div className="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center flex-shrink-0">
                         <Check className="w-3 h-3 text-white" />
                       </div>
                       <span>{feature}</span>
@@ -113,7 +110,7 @@ export function PlanWithUs() {
 
                 <Button
                   asChild
-                  className={`w-full rounded-full ${pkg.popular ? 'bg-white text-[#0B1F3B] hover:bg-white/90' : 'bg-white/20 text-white hover:bg-white/30'}`}
+                  className={`w-full rounded-full ${pkg.popular ? 'bg-white text-[#0B1F3B] hover:bg-white/90' : 'bg-white/20 text-white hover:bg-white/40 border border-white/30'}`}
                   size="lg"
                 >
                   <a
@@ -125,7 +122,7 @@ export function PlanWithUs() {
                     Book Now
                   </a>
                 </Button>
-              </GlassCard>
+              </div>
             </div>
           ))}
         </div>

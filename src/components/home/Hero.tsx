@@ -130,22 +130,22 @@ export function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-4 gap-6 max-w-2xl mx-auto animate-fade-in animation-delay-300">
-            <div className="text-center glass rounded-2xl p-4">
+          <div className="grid grid-cols-4 gap-4 max-w-2xl mx-auto animate-fade-in animation-delay-300">
+            <div className="text-center bg-[#0B1F3B]/80 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
               <p className="text-3xl font-bold text-white">34+</p>
-              <p className="text-xs text-white/60 mt-1">Itineraries</p>
+              <p className="text-xs text-white/70 mt-1">Itineraries</p>
             </div>
-            <div className="text-center glass rounded-2xl p-4">
+            <div className="text-center bg-[#0B1F3B]/80 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
               <p className="text-3xl font-bold text-white">15+</p>
-              <p className="text-xs text-white/60 mt-1">Destinations</p>
+              <p className="text-xs text-white/70 mt-1">Destinations</p>
             </div>
-            <div className="text-center glass rounded-2xl p-4">
+            <div className="text-center bg-[#0B1F3B]/80 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
               <p className="text-3xl font-bold text-white">30</p>
-              <p className="text-xs text-white/60 mt-1">Min Calls</p>
+              <p className="text-xs text-white/70 mt-1">Min Calls</p>
             </div>
-            <div className="text-center glass rounded-2xl p-4">
+            <div className="text-center bg-[#0B1F3B]/80 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
               <p className="text-3xl font-bold text-white">€15</p>
-              <p className="text-xs text-white/60 mt-1">Starting</p>
+              <p className="text-xs text-white/70 mt-1">Starting</p>
             </div>
           </div>
         </div>
